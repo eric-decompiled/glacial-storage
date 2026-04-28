@@ -144,6 +144,229 @@
       <span class="muted" style="font-size:14px;letter-spacing:.18em;text-transform:uppercase">Confidential</span>
     </div>
     <div style="margin-bottom:auto"></div>
+    <svg viewBox="0 0 1000 280" width="100%" height="280" aria-hidden="true" preserveAspectRatio="xMidYMax meet" style="margin-top:24px">
+      <defs>
+        <linearGradient id="skyGrad" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#0f3a5b" stop-opacity="0"/>
+          <stop offset="1" stop-color="#0f3a5b" stop-opacity=".06"/>
+        </linearGradient>
+        <linearGradient id="auroraGrad" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0" stop-color="#8fc8e6" stop-opacity=".0"/>
+          <stop offset=".5" stop-color="#3a8fc1" stop-opacity=".55"/>
+          <stop offset="1" stop-color="#8fc8e6" stop-opacity=".0"/>
+        </linearGradient>
+        <linearGradient id="aurora2" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0" stop-color="#c2e2f4" stop-opacity="0"/>
+          <stop offset=".5" stop-color="#8fc8e6" stop-opacity=".55"/>
+          <stop offset="1" stop-color="#c2e2f4" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="moonGlow" cx=".5" cy=".5" r=".5">
+          <stop offset="0" stop-color="#fff" stop-opacity=".9"/>
+          <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <rect x="0" y="0" width="1000" height="280" fill="url(#skyGrad)"/>
+
+      <!-- moon -->
+      <circle cx="850" cy="60" r="38" fill="url(#moonGlow)"/>
+      <circle cx="850" cy="60" r="18" fill="#fff" stroke="#0f3a5b" stroke-width="1.2"/>
+      <circle cx="844" cy="56" r="3" fill="#e3f2fb"/>
+      <circle cx="856" cy="64" r="2" fill="#e3f2fb"/>
+
+      <!-- stars -->
+      <g fill="#0f3a5b">
+        <circle cx="80" cy="40" r="1.2"/><circle cx="180" cy="22" r="1"/><circle cx="260" cy="55" r="1.2"/>
+        <circle cx="380" cy="30" r="1"/><circle cx="500" cy="48" r="1.2"/><circle cx="620" cy="20" r="1"/>
+        <circle cx="720" cy="40" r="1.2"/><circle cx="940" cy="100" r="1"/><circle cx="120" cy="80" r="1"/>
+      </g>
+
+      <!-- aurora ribbons -->
+      <path d="M-20 100 Q200 60 420 110 T1020 90" stroke="url(#auroraGrad)" stroke-width="14" fill="none"/>
+      <path d="M-20 130 Q220 90 460 140 T1020 120" stroke="url(#aurora2)" stroke-width="9" fill="none"/>
+      <path d="M-20 150 Q240 120 480 160 T1020 145" stroke="url(#auroraGrad)" stroke-width="5" fill="none" opacity=".7"/>
+
+      <!-- distant mountains -->
+      <path d="M0 220 L80 170 L150 200 L230 155 L310 200 L380 175 L470 210 L540 180 L640 215 L720 185 L810 210 L890 180 L1000 215 L1000 240 L0 240 Z"
+            fill="#c2e2f4" stroke="#0f3a5b" stroke-width="1.2" opacity=".85"/>
+      <!-- mountain shading -->
+      <path d="M80 170 L120 195 L150 200 Z M230 155 L280 195 L310 200 Z M540 180 L590 205 L640 215 Z M810 210 L850 195 L890 180 Z"
+            fill="#8fc8e6" opacity=".5"/>
+
+      <!-- snow ground -->
+      <path d="M0 230 Q250 215 500 228 T1000 222 L1000 280 L0 280 Z" fill="#e3f2fb" stroke="#0f3a5b" stroke-width="1.2"/>
+      <path d="M0 250 Q250 240 500 250 T1000 246" stroke="#8fc8e6" stroke-width="1" fill="none" stroke-dasharray="3 5" opacity=".7"/>
+
+      <!-- snowdrifts -->
+      <path d="M70 235 Q110 226 150 235 Z" fill="#fff" stroke="#0f3a5b" stroke-width=".8"/>
+      <path d="M780 232 Q820 224 860 232 Z" fill="#fff" stroke="#0f3a5b" stroke-width=".8"/>
+
+      <!-- big igloo (left) -->
+      <g>
+        <ellipse cx="220" cy="238" rx="78" ry="4" fill="#0f3a5b" opacity=".18"/>
+        <path d="M150 232 Q150 168 220 162 Q290 168 290 232 Z" fill="#fff" stroke="#0f3a5b" stroke-width="2"/>
+        <!-- snow-block courses -->
+        <line x1="158" y1="200" x2="282" y2="200" stroke="#0f3a5b" stroke-width=".9" stroke-dasharray="6 4" opacity=".55"/>
+        <line x1="154" y1="218" x2="286" y2="218" stroke="#0f3a5b" stroke-width=".9" stroke-dasharray="6 4" opacity=".55"/>
+        <line x1="170" y1="184" x2="270" y2="184" stroke="#0f3a5b" stroke-width=".9" stroke-dasharray="6 4" opacity=".55"/>
+        <!-- entrance tunnel -->
+        <path d="M188 232 Q188 200 220 197 Q252 200 252 232 Z" fill="#e3f2fb" stroke="#0f3a5b" stroke-width="1.6"/>
+        <path d="M198 232 Q198 210 220 208 Q242 210 242 232 Z" fill="#0f3a5b"/>
+        <!-- shading -->
+        <path d="M150 232 Q150 168 220 162 Q230 178 220 198 Q200 220 158 232 Z" fill="#c2e2f4" opacity=".35"/>
+        <!-- warm light from doorway -->
+        <ellipse cx="220" cy="232" rx="20" ry="3" fill="#e9d3a8" opacity=".7"/>
+        <!-- tape reels glimpsed through doorway -->
+        <g>
+          <circle cx="212" cy="222" r="4" fill="#e9d3a8" stroke="#0f3a5b" stroke-width=".8"/>
+          <circle cx="212" cy="222" r="1.4" fill="#0f3a5b"/>
+          <circle cx="228" cy="222" r="4" fill="#e9d3a8" stroke="#0f3a5b" stroke-width=".8"/>
+          <circle cx="228" cy="222" r="1.4" fill="#0f3a5b"/>
+          <line x1="212" y1="226" x2="228" y2="226" stroke="#0f3a5b" stroke-width=".8"/>
+        </g>
+        <!-- server-rack vent slits above doorway -->
+        <g stroke="#0f3a5b" stroke-width=".7" opacity=".6">
+          <line x1="208" y1="190" x2="232" y2="190"/>
+          <line x1="208" y1="186" x2="232" y2="186"/>
+          <line x1="212" y1="182" x2="228" y2="182"/>
+        </g>
+        <!-- status LEDs -->
+        <circle cx="206" cy="194" r="1.2" fill="#3a8fc1"/>
+        <circle cx="234" cy="194" r="1.2" fill="#d52b1e"/>
+      </g>
+
+      <!-- antenna / uplink mast on igloo -->
+      <g stroke="#0f3a5b" stroke-width="1.2" fill="none">
+        <line x1="220" y1="162" x2="220" y2="138"/>
+        <circle cx="220" cy="136" r="2.4" fill="#d52b1e" stroke="#0f3a5b"/>
+        <path d="M214 142 Q220 138 226 142" opacity=".55"/>
+        <path d="M210 138 Q220 132 230 138" opacity=".4"/>
+        <path d="M206 134 Q220 126 234 134" opacity=".25"/>
+      </g>
+
+      <!-- binary stream rising into aurora -->
+      <g fill="#3a8fc1" font-family="ui-monospace, monospace" font-size="9" opacity=".55">
+        <text x="244" y="150">1011 0100</text>
+        <text x="252" y="138">01 1101</text>
+        <text x="262" y="124">1010</text>
+      </g>
+
+      <!-- small igloo (mid-right) -->
+      <g>
+        <ellipse cx="700" cy="240" rx="44" ry="3" fill="#0f3a5b" opacity=".15"/>
+        <path d="M664 236 Q664 200 700 197 Q736 200 736 236 Z" fill="#fff" stroke="#0f3a5b" stroke-width="1.6"/>
+        <line x1="668" y1="218" x2="732" y2="218" stroke="#0f3a5b" stroke-width=".7" stroke-dasharray="4 4" opacity=".55"/>
+        <line x1="672" y1="208" x2="728" y2="208" stroke="#0f3a5b" stroke-width=".7" stroke-dasharray="4 4" opacity=".55"/>
+        <path d="M688 236 Q688 222 700 220 Q712 222 712 236 Z" fill="#0f3a5b"/>
+      </g>
+
+      <!-- dog sled team (foreground) -->
+      <g transform="translate(380 196)">
+        <!-- sled track -->
+        <line x1="-30" y1="40" x2="240" y2="40" stroke="#8fc8e6" stroke-width="1.2" stroke-dasharray="2 5" opacity=".9"/>
+        <!-- runners -->
+        <line x1="0" y1="38" x2="64" y2="38" stroke="#0f3a5b" stroke-width="2.2"/>
+        <line x1="-2" y1="42" x2="66" y2="42" stroke="#0f3a5b" stroke-width="1.2" opacity=".6"/>
+        <!-- sled deck -->
+        <rect x="4" y="32" width="60" height="6" rx="1" fill="#0f3a5b"/>
+        <!-- Snowflake USB drive cargo strapped to sled -->
+        <rect x="8" y="14" width="50" height="18" rx="2" fill="#e3f2fb" stroke="#0f3a5b" stroke-width="1.6"/>
+        <!-- USB-C connector poking out -->
+        <rect x="-2" y="20" width="10" height="6" rx="1.5" fill="#0f3a5b"/>
+        <rect x="0" y="22" width="6" height="2" fill="#8fc8e6"/>
+        <!-- drive label -->
+        <rect x="12" y="17" width="42" height="6" fill="#fff" stroke="#0f3a5b" stroke-width=".7"/>
+        <text x="33" y="22" text-anchor="middle" font-family="Helvetica" font-size="5" font-weight="700" fill="#0f3a5b">SNOWFLAKE 20TB</text>
+        <!-- status LED + maple -->
+        <circle cx="50" cy="28" r="1.5" fill="#d52b1e"/>
+        <path d="M22 26 l1 2.4 l2.4 -.6 l-1.4 2 l2 1.2 l-2.4 .2 l.2 2.4 l-1.6 -1.4 l-1.6 1.4 l.2 -2.4 l-2.4 -.2 l2 -1.2 l-1.4 -2 l2.4 .6 z" fill="#d52b1e"/>
+        <!-- straps -->
+        <line x1="18" y1="13" x2="18" y2="38" stroke="#0f3a5b" stroke-width="1"/>
+        <line x1="48" y1="13" x2="48" y2="38" stroke="#0f3a5b" stroke-width="1"/>
+        <!-- musher -->
+        <g>
+          <rect x="-2" y="-2" width="10" height="22" rx="3" fill="#0f3a5b"/>
+          <circle cx="3" cy="-6" r="5" fill="#0f3a5b"/>
+          <circle cx="3" cy="-6" r="3" fill="#e9d3a8"/>
+          <rect x="-2" y="-12" width="10" height="6" rx="2" fill="#d52b1e"/>
+          <line x1="6" y1="6" x2="20" y2="14" stroke="#0f3a5b" stroke-width="1.6"/>
+        </g>
+        <!-- traces (lines from sled to dogs) -->
+        <line x1="60" y1="22" x2="220" y2="38" stroke="#0f3a5b" stroke-width="1"/>
+        <line x1="60" y1="28" x2="220" y2="38" stroke="#0f3a5b" stroke-width="1"/>
+        <!-- dog team -->
+        <g fill="#0f3a5b">
+          <!-- dog 1 -->
+          <ellipse cx="92" cy="36" rx="9" ry="5"/>
+          <circle cx="100" cy="32" r="4"/>
+          <polygon points="98,28 102,28 100,24"/>
+          <line x1="83" y1="36" x2="78" y2="40" stroke="#0f3a5b" stroke-width="2"/>
+          <line x1="86" y1="40" x2="86" y2="46" stroke="#0f3a5b" stroke-width="1.6"/>
+          <line x1="92" y1="40" x2="92" y2="46" stroke="#0f3a5b" stroke-width="1.6"/>
+          <line x1="98" y1="40" x2="98" y2="46" stroke="#0f3a5b" stroke-width="1.6"/>
+          <!-- dog 2 -->
+          <ellipse cx="124" cy="36" rx="9" ry="5"/>
+          <circle cx="132" cy="32" r="4"/>
+          <polygon points="130,28 134,28 132,24"/>
+          <line x1="115" y1="36" x2="110" y2="40" stroke="#0f3a5b" stroke-width="2"/>
+          <line x1="118" y1="40" x2="118" y2="46" stroke="#0f3a5b" stroke-width="1.6"/>
+          <line x1="124" y1="40" x2="124" y2="46" stroke="#0f3a5b" stroke-width="1.6"/>
+          <line x1="130" y1="40" x2="130" y2="46" stroke="#0f3a5b" stroke-width="1.6"/>
+          <!-- dog 3 -->
+          <ellipse cx="156" cy="36" rx="9" ry="5"/>
+          <circle cx="164" cy="32" r="4"/>
+          <polygon points="162,28 166,28 164,24"/>
+          <line x1="147" y1="36" x2="142" y2="40" stroke="#0f3a5b" stroke-width="2"/>
+          <line x1="150" y1="40" x2="150" y2="46" stroke="#0f3a5b" stroke-width="1.6"/>
+          <line x1="156" y1="40" x2="156" y2="46" stroke="#0f3a5b" stroke-width="1.6"/>
+          <line x1="162" y1="40" x2="162" y2="46" stroke="#0f3a5b" stroke-width="1.6"/>
+          <!-- lead dog -->
+          <ellipse cx="192" cy="36" rx="10" ry="5.5"/>
+          <circle cx="201" cy="31" r="4.5"/>
+          <polygon points="199,27 204,27 201,22"/>
+          <line x1="182" y1="36" x2="176" y2="40" stroke="#0f3a5b" stroke-width="2"/>
+          <line x1="186" y1="40" x2="186" y2="47" stroke="#0f3a5b" stroke-width="1.8"/>
+          <line x1="192" y1="40" x2="192" y2="47" stroke="#0f3a5b" stroke-width="1.8"/>
+          <line x1="198" y1="40" x2="198" y2="47" stroke="#0f3a5b" stroke-width="1.8"/>
+          <!-- breath puff on lead -->
+        </g>
+        <ellipse cx="210" cy="30" rx="6" ry="3" fill="#fff" opacity=".7"/>
+        <ellipse cx="218" cy="28" rx="3" ry="2" fill="#fff" opacity=".5"/>
+      </g>
+
+      <!-- pine trees, far left -->
+      <g stroke="#0f3a5b" stroke-width="1.2" fill="#0f3a5b">
+        <polygon points="40,232 50,210 60,232" opacity=".85"/>
+        <polygon points="42,222 50,200 58,222" opacity=".85"/>
+        <rect x="48" y="232" width="4" height="6" stroke="none"/>
+        <polygon points="80,234 88,216 96,234" opacity=".7"/>
+        <polygon points="82,224 88,206 94,224" opacity=".7"/>
+        <rect x="86" y="234" width="4" height="5" stroke="none"/>
+      </g>
+
+      <!-- pine trees, far right -->
+      <g stroke="#0f3a5b" stroke-width="1.2" fill="#0f3a5b">
+        <polygon points="930,234 940,212 950,234" opacity=".85"/>
+        <polygon points="932,224 940,202 948,224" opacity=".85"/>
+        <rect x="938" y="234" width="4" height="6" stroke="none"/>
+        <polygon points="960,236 967,218 974,236" opacity=".7"/>
+        <rect x="964" y="236" width="3" height="5" stroke="none"/>
+      </g>
+
+      <!-- snowflakes falling -->
+      <g fill="#fff" stroke="#8fc8e6" stroke-width="1">
+        <circle cx="100" cy="120" r="2.4"/>
+        <circle cx="240" cy="80" r="2"/>
+        <circle cx="340" cy="140" r="2.6"/>
+        <circle cx="460" cy="60" r="2"/>
+        <circle cx="580" cy="130" r="2.4"/>
+        <circle cx="680" cy="80" r="2"/>
+        <circle cx="780" cy="150" r="2.6"/>
+        <circle cx="900" cy="170" r="2"/>
+        <circle cx="60" cy="170" r="2"/>
+        <circle cx="510" cy="180" r="2"/>
+      </g>
+    </svg>
   </section>
 
   <!-- 2 PROBLEM -->
@@ -221,7 +444,7 @@
         </div>
         <div class="arrow">→</div>
         <div class="step">
-          <svg viewBox="0 0 100 80" width="120"><polygon points="10,70 50,15 90,70" fill="#e3f2fb" stroke="#0f3a5b" stroke-width="2"/><rect x="40" y="48" width="20" height="22" fill="#0f3a5b"/><circle cx="50" cy="60" r="2" fill="#d52b1e"/></svg>
+          <svg viewBox="0 0 100 80" width="120" aria-hidden="true"><ellipse cx="50" cy="73" rx="42" ry="2.5" fill="#0f3a5b" opacity=".15"/><path d="M10 70 Q10 22 50 18 Q90 22 90 70 Z" fill="#e3f2fb" stroke="#0f3a5b" stroke-width="2"/><path d="M38 70 Q38 54 50 52 Q62 54 62 70 Z" fill="#0f3a5b"/><line x1="14" y1="42" x2="86" y2="42" stroke="#0f3a5b" stroke-width=".7" stroke-dasharray="3 3"/><line x1="18" y1="58" x2="82" y2="58" stroke="#0f3a5b" stroke-width=".7" stroke-dasharray="3 3"/></svg>
           <h3 style="margin-top:12px">2. Igloo</h3>
           <p class="muted">We receive, verify, and write to LTO-9 tape. Snowflake is reformatted and recycled.</p>
         </div>
@@ -229,7 +452,7 @@
         <div class="step">
           <svg viewBox="0 0 100 80" width="120"><rect x="10" y="20" width="80" height="50" rx="4" fill="#fff" stroke="#0f3a5b" stroke-width="2"/><polyline points="10,20 50,50 90,20" fill="none" stroke="#0f3a5b" stroke-width="2"/><circle cx="80" cy="60" r="6" fill="#3a8fc1"/></svg>
           <h3 style="margin-top:12px">3. Return</h3>
-          <p class="muted">For reads, we ship a Snowflake back loaded with the requested data. Postage included.</p>
+          <p class="muted">For reads, we ship a Snowflake back loaded with the requested data. Standard postage included.</p>
         </div>
       </div>
       <p class="lede" style="text-align:center;margin-top:8px">Glacial SLA: <strong>3–14 business days</strong> coast-to-coast. Faster in the Maritimes. Slower in winter, by design.</p>
@@ -261,11 +484,13 @@
         <p class="muted">A field-deployable 1 PB chassis. 50 Snowflakes in a hardened case. Any resemblance to existing products, real or fictional, is purely coincidental and the subject of ongoing correspondence with counsel.</p>
       </div>
       <div class="card">
-        <svg viewBox="0 0 120 120" width="100%" height="120">
-          <polygon points="10,90 60,30 110,90" fill="#fff" stroke="#0f3a5b" stroke-width="2"/>
-          <path d="M10 90 Q60 70 110 90" fill="none" stroke="#0f3a5b" stroke-width="1.5" stroke-dasharray="3 3"/>
-          <rect x="50" y="70" width="20" height="20" fill="#0f3a5b"/>
-          <circle cx="60" cy="80" r="3" fill="#d52b1e"/>
+        <svg viewBox="0 0 120 120" width="100%" height="120" aria-hidden="true">
+          <ellipse cx="60" cy="105" rx="50" ry="3" fill="#0f3a5b" opacity=".15"/>
+          <path d="M12 100 Q12 32 60 28 Q108 32 108 100 Z" fill="#fff" stroke="#0f3a5b" stroke-width="2"/>
+          <path d="M44 100 Q44 74 60 71 Q76 74 76 100 Z" fill="#0f3a5b"/>
+          <line x1="20" y1="50" x2="100" y2="50" stroke="#0f3a5b" stroke-width=".8" stroke-dasharray="3 3"/>
+          <line x1="16" y1="76" x2="104" y2="76" stroke="#0f3a5b" stroke-width=".8" stroke-dasharray="3 3"/>
+          <circle cx="60" cy="84" r="2.5" fill="#d52b1e"/>
         </svg>
         <h3>Igloo</h3>
         <p class="muted">Our regional facility. LTO-9 tape library, ambient-cooled, staffed by a small team and one (1) good dog.</p>
@@ -325,6 +550,23 @@
   <section class="slide">
     <div class="eyebrow">06 · Positioning</div>
     <h2>Slow on purpose.</h2>
+    <svg viewBox="0 0 360 70" width="100%" height="70" aria-hidden="true" style="margin:8px 0 16px;opacity:.85">
+      <line x1="0" y1="58" x2="360" y2="58" stroke="#8fc8e6" stroke-width="1" stroke-dasharray="2 4"/>
+      <g transform="translate(60 30)">
+        <line x1="0" y1="22" x2="76" y2="22" stroke="#0f3a5b" stroke-width="2"/>
+        <rect x="18" y="8" width="40" height="14" fill="#d52b1e" stroke="#0f3a5b" stroke-width="1.5"/>
+        <g fill="#0f3a5b">
+          <circle cx="96" cy="20" r="4"/><rect x="92" y="20" width="10" height="6"/>
+          <circle cx="114" cy="20" r="4"/><rect x="110" y="20" width="10" height="6"/>
+          <circle cx="132" cy="20" r="4"/><rect x="128" y="20" width="10" height="6"/>
+          <circle cx="150" cy="20" r="4"/><rect x="146" y="20" width="10" height="6"/>
+        </g>
+        <line x1="58" y1="14" x2="150" y2="22" stroke="#0f3a5b" stroke-width="1"/>
+      </g>
+      <g fill="#fff" stroke="#8fc8e6" stroke-width="1">
+        <circle cx="40" cy="14" r="1.8"/><circle cx="180" cy="22" r="1.8"/><circle cx="280" cy="10" r="1.8"/><circle cx="320" cy="32" r="1.8"/>
+      </g>
+    </svg>
     <div class="row">
       <div class="col">
         <p class="lede">Speed is a liability for archival data. Anything reachable in milliseconds is reachable by an attacker in milliseconds. Our latency floor is our security floor.</p>
@@ -345,6 +587,22 @@
     <div class="eyebrow">07 · Market</div>
     <h2>For the people.</h2>
     <p class="lede" style="margin-bottom:24px">Cold data is cold data. One product serves every buyer who has ever paused before clicking "delete."</p>
+    <svg viewBox="0 0 600 80" width="100%" height="64" aria-hidden="true" style="margin-bottom:16px;opacity:.9">
+      <path d="M0 70 Q150 56 300 68 T600 64" fill="none" stroke="#8fc8e6" stroke-width="1.2" opacity=".7"/>
+      <g stroke="#0f3a5b" stroke-width="1.5" fill="#fff">
+        <path d="M70 70 Q70 38 110 35 Q150 38 150 70 Z"/>
+        <path d="M260 70 Q260 30 310 26 Q360 30 360 70 Z"/>
+        <path d="M470 70 Q470 42 505 39 Q540 42 540 70 Z"/>
+      </g>
+      <g fill="#0f3a5b">
+        <path d="M104 70 Q104 56 110 55 Q116 56 116 70 Z"/>
+        <path d="M302 70 Q302 52 310 51 Q318 52 318 70 Z"/>
+        <path d="M501 70 Q501 58 505 57 Q509 58 509 70 Z"/>
+      </g>
+      <g fill="#fff" stroke="#8fc8e6" stroke-width="1">
+        <circle cx="30" cy="20" r="1.8"/><circle cx="200" cy="14" r="1.8"/><circle cx="400" cy="22" r="1.8"/><circle cx="570" cy="18" r="1.8"/>
+      </g>
+    </svg>
     <div class="grid-4">
       <div class="card"><h3>Enterprise &amp; legal</h3><p class="muted">7-year retention. SOX, HIPAA, PIPEDA holds.</p></div>
       <div class="card"><h3>Research</h3><p class="muted">Genomics, astronomy, climate datasets that outlive grants.</p></div>
@@ -359,8 +617,8 @@
     <h2>Four things hyperscalers cannot copy.</h2>
     <div class="grid-2">
       <div class="card">
-        <h3>Zero egress fees. Forever.</h3>
-        <p class="muted">Postage is the egress. Postage is included. The line item does not exist on our invoice and never will.</p>
+        <h3>No metered egress. By design.</h3>
+        <p class="muted">Postage is the egress, and standard postage is bundled into the subscription. There is no per-GB line item on our invoice — and there is no plan to add one.</p>
       </div>
       <div class="card">
         <h3>Sovereign Canadian residency.</h3>
@@ -373,6 +631,19 @@
       <div class="card">
         <h3>Lowest-carbon archival.</h3>
         <p class="muted">Ambient arctic cooling, tape at rest draws zero watts, last-mile sled runs on kibble. ESG report writes itself.</p>
+        <svg viewBox="0 0 240 60" width="100%" height="48" aria-hidden="true" style="margin-top:12px;opacity:.85">
+          <line x1="0" y1="48" x2="240" y2="48" stroke="#8fc8e6" stroke-width="1" stroke-dasharray="2 4"/>
+          <g transform="translate(20 22)">
+            <line x1="0" y1="22" x2="60" y2="22" stroke="#0f3a5b" stroke-width="2"/>
+            <rect x="14" y="10" width="32" height="12" fill="#d52b1e" stroke="#0f3a5b" stroke-width="1.2"/>
+            <g fill="#0f3a5b">
+              <circle cx="76" cy="20" r="3.2"/><rect x="73" y="20" width="8" height="5"/>
+              <circle cx="92" cy="20" r="3.2"/><rect x="89" y="20" width="8" height="5"/>
+              <circle cx="108" cy="20" r="3.2"/><rect x="105" y="20" width="8" height="5"/>
+            </g>
+            <line x1="46" y1="14" x2="108" y2="20" stroke="#0f3a5b" stroke-width="1"/>
+          </g>
+        </svg>
       </div>
     </div>
   </section>
@@ -383,14 +654,14 @@
     <h2>One bill. One year. No surprises.</h2>
     <div class="row">
       <div class="col">
-        <p class="lede">Customers pay a flat annual subscription per terabyte stored. Postage, redundancy, tape refresh, and reads are bundled. There is no metered egress, no API call charge, no "request" SKU.</p>
+        <p class="lede">Customers pay a flat annual subscription per terabyte stored. Standard postage, redundancy, tape refresh, and a fair-use read allowance are bundled. There is no metered egress, no API call charge, no "request" SKU.</p>
         <p class="muted" style="margin-top:24px">Pricing is in the data room.</p>
       </div>
       <div class="col">
         <div class="card">
           <h3>What's included</h3>
           <ul class="bare" style="margin-top:8px">
-            <li>Round-trip Canada Post shipping</li>
+            <li>Round-trip standard Canada Post shipping</li>
             <li>LTO-9 tape, two geographic copies</li>
             <li>Unlimited reads (subject to SLA)</li>
             <li>Tamper-evident chain-of-custody log</li>
